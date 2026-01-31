@@ -1,0 +1,80 @@
+body {
+  background-color: antiquewhite;
+}
+.nav-bar {
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serachProducts {
+  /* display: inline-block; */
+  display: block;
+  width: 1250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.imgStyle {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+h2 {
+  color: white;
+}
+.Products {
+  margin: auto;
+  width: 1250px;
+}
+.item {
+  display: inline-block;
+  margin: auto 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  width: 210px;
+  height: 380px;
+  box-shadow: 2px 2px 2px 2px #cfcfcf;
+  border-radius: 10px;
+}
+.buttons,
+.heart {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: cadetblue;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+p {
+  padding-left: 10px;
+  text-align: left;
+}
+.favourite,
+.cartdiv,
+.total {
+  margin: auto;
+  width: 1300px;
+}
+.plus,
+.minus {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  width: 20px;
+  border-radius: 2px;
+  background-color: cadetblue;
+  color: white;
+}

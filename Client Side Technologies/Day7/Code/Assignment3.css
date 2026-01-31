@@ -1,0 +1,58 @@
+body {
+  background-color: aliceblue;
+  font-family: Tahoma;
+}
+.main-div {
+  width: 900px;
+  height: 500px;
+  position: relative;
+}
+li {
+  list-style-type: none;
+}
+li:hover {
+  cursor: pointer;
+}
+ul {
+  padding: 0;
+}
+.avaialble {
+  top: 0;
+  left: 0;
+}
+.selected {
+  top: 0;
+  right: 0;
+}
+.avaialble,
+.selected {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  padding: 50px;
+  margin: 10px;
+}
+li {
+  background-color: rgb(241, 241, 241);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.input-div {
+  top: 0;
+  left: 300px;
+  position: absolute;
+  display: inline-block;
+  padding: 90px;
+  margin: 10px;
+}
+input {
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}

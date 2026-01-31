@@ -1,0 +1,46 @@
+body {
+  background-color: aliceblue;
+  font-family: Tahoma;
+}
+.dropDownDiv {
+  padding: 50px;
+  margin: auto 50px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 10px;
+  width: 150px;
+}
+.infoDiv {
+  visibility: hidden;
+  padding: 50px;
+  margin: auto 50px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: white;
+  width: 900px;
+  height: 500px;
+}
+
+td {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.data {
+  width: 400px;
+  margin: 10px;
+}
+.button {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 50px;
+  color: white;
+}
+[name="delete"] {
+  background-color: red;
+}
+
+[name="edit"] {
+  background-color: green;
+}
