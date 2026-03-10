@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <style>
+      body {
+        width: 1200px;
+      }
+      div {
+        float: right;
+        width: 200px;
+        border: 2px solid yellow;
+        padding: 20px;
+        background-color: yellow;
+        text-align: center;
+      }
+      p {
+        display: inline;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/images/3.JPG" class="dropArea" width="700px" />
+    <div class="draggable">
+      <img src="/images/2.jpg" class="" />
+      <p>drag me</p>
+    </div>
+    <script>
+      $(".draggable").draggable();
+      $(".dropArea").droppable({
+        drop: function () {
+          $(".draggable").fadeOut(1000);
+        },
+      });
+    </script>
+  </body>
+</html>

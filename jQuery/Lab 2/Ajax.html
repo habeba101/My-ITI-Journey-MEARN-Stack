@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax Jquery</title>
+    <script src="scripts/jquery-4.0.0.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Data of Students</h1>
+      <div class="studentData"></div>
+    </div>
+    <button class="request">Request Ajax</button>
+    <script>
+      $(".request").click(function () {
+        $.ajax({
+          url: "std.json",
+          method: "GET",
+          dataType: "json",
+        })
+          .done(function (data, textStatus, jqXHR) {
+            $.each(data, function (index, student) {
+              $(".studentData").append(
+                `<p>name: ${student.name} age: ${student.age} address: ${student.address} </p>`,
+              );
+            });
+          })
+          .fail(function (xhr, textStatus, error) {
+            alert(`Error  ${xhr.status}`);
+          })
+          .always(function () {
+            alert("request Completed");
+          });
+      });
+    </script>
+  </body>
+</html>

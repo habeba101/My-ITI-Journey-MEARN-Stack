@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Animation</title>
+    <script src="scripts/jquery-4.0.0.min.js"></script>
+    <script src="scripts/jq-easing.js"></script>
+    <style>
+      body {
+        width: 1000px;
+      }
+      div {
+        position: absolute;
+      }
+      img {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img">
+      <img src="/images/12.gif" class="car" />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p></p>
+    <script>
+      $(document).ready(function () {
+        $(".car").animate(
+          {
+            left: $(window).width() - 250,
+          },
+          {
+            duration: 2000,
+            easing: "linear",
+            step: function (now, fx) {
+              $("p").text("");
+              $("p").text($(".img").html());
+            },
+          },
+        );
+      });
+    </script>
+  </body>
+</html>

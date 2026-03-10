@@ -1,0 +1,128 @@
+.aboutBtn,
+.GallaryBtn,
+.ServicesBtn,
+.ComplainBtn {
+  display: inline-block;
+  padding: 30px;
+  width: 180px;
+  background-color: pink;
+  color: white;
+  font-size: 30px;
+  border: none;
+  box-shadow:
+    1px 5px palevioletred,
+    -1px -1px palevioletred;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.ServicesBtn {
+  position: relative;
+}
+.buttonContainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.aboutContainer {
+  box-shadow: 0px 4px 8px grey;
+  width: 400px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  margin: 10px auto;
+}
+.GalllaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+  margin: auto;
+}
+.left,
+.right {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 15px;
+}
+.serviceContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.serviceContainer ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.serviceContainer ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 180px;
+  background-color: pink;
+  color: white;
+  font-size: 30px;
+  border-bottom: 1px solid palevioletred;
+  border-radius: 10px;
+}
+.complainContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+}
+.complainContainer input {
+  display: inline-block;
+  margin: 10px;
+}
+
+.complainContainer p {
+  display: inline-block;
+  margin: 10px;
+}
+
+.complainContainer textarea {
+  display: block;
+  margin: auto;
+}
+
+.submitComplain {
+  display: block;
+  margin: 15px auto;
+}
+.image {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+.complainData {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+}
+.complainData p {
+  display: inline-block;
+  margin: 10px;
+}
+.complainData span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+.edit {
+  display: block;
+  margin: 15px auto;
+}
+.aboutContainer,
+.complainContainer,
+.GalllaryContainer,
+.serviceContainer,
+.complainData {
+  display: none;
+}

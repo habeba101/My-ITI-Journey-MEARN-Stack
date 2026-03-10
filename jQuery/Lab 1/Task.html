@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Task.css" />
+    <title>JQuery Day 1</title>
+  </head>
+  <body>
+    <div class="buttonContainer">
+      <button class="aboutBtn">About</button>
+      <button class="GallaryBtn">Gallary</button>
+      <button class="ServicesBtn">
+        Services
+        <div class="serviceContainer">
+          <ul>
+            <li>item #1</li>
+            <li>item #2</li>
+            <li>item #3</li>
+          </ul>
+        </div>
+      </button>
+
+      <button class="ComplainBtn">Complain</button>
+    </div>
+    <div class="aboutContainer">
+      <p>Story about snow man</p>
+    </div>
+
+    <div class="GalllaryContainer">
+      <img src="Images/left.png" alt="" class="left" />
+      <img src="Images/1.jpg" alt="" class="image" />
+      <img src="Images/right.png" alt="" class="right" />
+    </div>
+
+    <div class="complainContainer">
+      <p>Name</p>
+      <input type="text" class="name" name="name" />
+      <p>Email</p>
+      <input type="email" class="email" name="email" />
+      <p>Phone</p>
+      <input type="text" class="phone" name="phone" />
+      <p>Complain</p>
+      <textarea name="complain" class="complain"></textarea>
+      <button class="submitComplain">Send</button>
+    </div>
+    <div class="complainData"></div>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="Task.js"></script>
+  </body>
+</html>
