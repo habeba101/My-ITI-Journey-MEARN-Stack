@@ -1,0 +1,124 @@
+.box {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  animation: boxanimation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.main {
+  width: 50%px;
+  height: 90%px;
+  position: absolute;
+}
+.box:hover {
+  animation-play-state: paused;
+}
+
+@keyframes boxanimation {
+  0% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+  5% {
+    left: 0px;
+    top: 900px;
+    background-color: blue;
+  }
+  10% {
+    left: 100px;
+    top: 900px;
+    background-color: red;
+  }
+  15% {
+    left: 100px;
+    top: 0px;
+    background-color: red;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+    background-color: pink;
+  }
+  30% {
+    left: 200px;
+    top: 900px;
+    background-color: pink;
+  }
+  35% {
+    left: 300px;
+    top: 900px;
+    background-color: yellow;
+  }
+  40% {
+    left: 300px;
+    top: 0px;
+    background-color: yellow;
+  }
+
+  45% {
+    left: 400px;
+    top: 0px;
+    background-color: green;
+  }
+  50% {
+    left: 400px;
+    top: 900px;
+    background-color: green;
+  }
+  55% {
+    left: 500px;
+    top: 900px;
+    background-color: brown;
+  }
+  60% {
+    left: 500px;
+    top: 0px;
+    background-color: brown;
+  }
+  65% {
+    left: 600px;
+    top: 0px;
+    background-color: cyan;
+  }
+  70% {
+    left: 600px;
+    top: 900px;
+    background-color: cyan;
+  }
+  75% {
+    left: 700px;
+    top: 900px;
+    background-color: crimson;
+  }
+  80% {
+    left: 700px;
+    top: 0px;
+    background-color: crimson;
+  }
+  85% {
+    left: 800px;
+    top: 0px;
+    background-color: goldenrod;
+  }
+  90% {
+    left: 800px;
+    top: 900px;
+    background-color: goldenrod;
+  }
+  95% {
+    left: 900px;
+    top: 900px;
+    background-color: indigo;
+  }
+  100% {
+    left: 900px;
+    top: 0px;
+    background-color: indigo;
+  }
+}
