@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to right, rgb(0, 255, 213), rgb(0, 217, 255));
+}
+.container {
+  background-color: cadetblue;
+  width: 500px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 20px;
+
+  border-radius: 30px;
+}
+.container p {
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.city {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.btn {
+  display: block;
+  padding: 15px;
+  margin: 10px auto;
+  background-color: rgb(4, 81, 81);
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+.cityData {
+  background-color: rgb(0, 255, 247);
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+.cityData p {
+  color: blue;
+  font-size: 20px;
+}

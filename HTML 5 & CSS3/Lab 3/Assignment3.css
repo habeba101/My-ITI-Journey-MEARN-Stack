@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(to right, red, rgb(255, 98, 98));
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+.filters {
+  text-align: center;
+}
+.filters button {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+p[data-price] {
+  color: mediumspringgreen;
+  font-weight: bold;
+  padding-left: 6px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.data {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+  box-shadow:
+    2px 2px 8px rgb(67, 67, 67),
+    -2px -2px 8px rgb(67, 67, 67);
+}
+.fav:hover {
+  cursor: pointer;
+}

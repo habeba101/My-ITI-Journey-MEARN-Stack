@@ -1,0 +1,29 @@
+.container {
+  background-color: aliceblue;
+  width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  margin-top: 50px;
+
+  box-shadow:
+    2px 2px 5px grey,
+    -2px -2px 5px grey;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.savebtn {
+  display: block;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 10px;
+  width: 300px;
+  background-color: blue;
+  color: white;
+}
