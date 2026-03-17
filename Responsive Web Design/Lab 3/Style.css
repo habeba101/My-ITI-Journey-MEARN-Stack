@@ -1,0 +1,68 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0px;
+  padding: 0px;
+}
+.bg {
+  background-color: #1b1b1b;
+}
+.dark {
+  background-color: #080808;
+}
+.greish {
+  color: #9c9c9c;
+}
+.border-greish {
+  border: 1px solid #9c9c9c;
+}
+.green {
+  background-color: #3f8e00;
+}
+.y-1 {
+  color: #ffa217;
+}
+.bg-1 {
+  background-color: #ffa217;
+}
+.y-2 {
+  background-color: #fff6e9;
+}
+.b-1 {
+  color: #000aff;
+}
+.b-2 {
+  background-color: #d0e6ff;
+}
+.bg-2 {
+  background-color: #000aff;
+}
+.g-1 {
+  background-color: #e0fff8;
+}
+.g-2 {
+  color: #2ab090;
+}
+.bg-3 {
+  background-color: #2ab090;
+}
+.ff-2 {
+  font-family: "Raleway", sans-serif;
+}
+.fw-1 {
+  font-weight: 800;
+}
+.border-gradient {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background:
+    linear-gradient(#080808, #080808) padding-box,
+    linear-gradient(to left, #1b1b1b, #484848) border-box;
+}
+
+.start-15 {
+  top: 0px;
+  left: 40px;
+}
+.h:hover {
+  color: #3f8e00;
+}

@@ -1,0 +1,15 @@
+@use "./abstracts/extend";
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins";
+
+@use "./components/buttons";
+@use "./components/cards";
+@use "./components/images";
+@use "./layout/grid";
+
+@use "./utilites/margins";
+@use "./utilites/borders";
+
+body {
+  background-color: $mainBackground;
+}

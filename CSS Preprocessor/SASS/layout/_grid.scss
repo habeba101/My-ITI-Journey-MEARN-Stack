@@ -1,0 +1,15 @@
+// 2-Grid System
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+//grid system
+.rowClass {
+  display: flex;
+  @include flex-center;
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      flex: 1;
+      width: (100%/12) * $i;
+      padding: $spacing;
+    }
+  }
+}

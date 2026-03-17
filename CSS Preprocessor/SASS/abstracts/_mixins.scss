@@ -1,0 +1,43 @@
+@use "./variables" as *;
+//4- grid mapping
+@each $color, $text-size, $index in $colors {
+  .text-#{$index} {
+    color: $color;
+    font-size: $text-size;
+    font-family: "Roboto";
+  }
+}
+@each $bgcolor, $index in $background-colors {
+  .bg-#{$index} {
+    background-color: $bgcolor;
+    padding: $spacing;
+  }
+}
+//5- border mixin
+@mixin border-mixin($size, $type, $color) {
+  border: $size $type $color;
+}
+//6-mixins
+
+//flex center mixin
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//border mixin accepts color only
+@mixin border-mixin-color($color) {
+  border: 2px solid $color;
+}
+//shadow mixins for cards
+@mixin shadow($val1, $val2, $blur, $color) {
+  box-shadow:
+    $val1 $val1 $blur $color,
+    $val2 $val2 $blur $color;
+}
+@mixin set-width-height($width, $height) {
+  width: $width;
+  height: $height;
+}

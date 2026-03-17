@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.border {
+  @include border-mixin(2px, solid, #3e6fd8);
+  margin: 10px;
+  padding: $spacing;
+  border-radius: $BorderRadius;
+}
+.border-primary {
+  @include border-mixin(2px, solid, $primaryColor);
+  margin: 10px;
+  padding: $spacing;
+  border-radius: $BorderRadius;
+}
+.border-secandry {
+  @include border-mixin(2px, solid, $secondaryColor);
+  margin: 10px;
+  padding: $spacing;
+  border-radius: $BorderRadius;
+}
+.border-danger {
+  @include border-mixin(3px, solid, $dangerColor);
+  margin: 10px;
+  padding: $spacing;
+  border-radius: $BorderRadius;
+}
+
+.circle {
+  border-radius: 50%;
+  @include set-width-height(200, 200px);
+}

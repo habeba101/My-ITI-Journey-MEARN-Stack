@@ -1,0 +1,131 @@
+.main-grid {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "side nav nav nav nav"
+    "side image1 image2 image3 image4"
+    "side image5 image6 image7 image8"
+    "side image9 image10 image11 image12";
+}
+.navbar {
+  grid-area: nav;
+  background-color: rgb(255, 212, 159);
+  color: white;
+  border-bottom: 1px solid darkgoldenrod;
+}
+.navbar ul {
+  list-style: none;
+}
+li {
+  font-size: 25px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+li:hover {
+  background-color: rgb(209, 209, 182);
+}
+.sideBar {
+  grid-area: side;
+  height: 100vh;
+}
+.sideBar h1 {
+  font-size: 50px;
+}
+.sideBar p {
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+.sideBar span {
+  padding: 5px;
+  display: block;
+  margin: 15px;
+  color: gray;
+}
+.icons img {
+  margin: 10px;
+  width: 40px;
+}
+.img {
+  width: 20vw;
+}
+.mini-grid {
+  display: grid;
+  grid-template-areas:
+    "mini1 mini2 mini3"
+    "mini4 mini5 mini6";
+  margin: 20px;
+  padding: 10px;
+}
+.mini-grid img {
+  width: 50px;
+}
+.mini1 {
+  grid-area: mini1;
+}
+.mini2 {
+  grid-area: mini2;
+}
+.mini3 {
+  grid-area: mini3;
+}
+.mini4 {
+  grid-area: mini4;
+}
+.mini5 {
+  grid-area: mini5;
+}
+.mini6 {
+  grid-area: mini6;
+}
+.image1 {
+  grid-area: image1;
+  margin: auto;
+}
+.image2 {
+  grid-area: image2;
+  margin: auto;
+}
+.image3 {
+  grid-area: image3;
+  margin: auto;
+}
+.image4 {
+  grid-area: image4;
+  margin: auto;
+}
+.image5 {
+  grid-area: image5;
+  margin: auto;
+}
+.image6 {
+  grid-area: image6;
+  margin: auto;
+}
+.image7 {
+  grid-area: image7;
+  margin: auto;
+}
+.image8 {
+  grid-area: image8;
+  margin: auto;
+}
+.image9 {
+  grid-area: image9;
+  margin: auto;
+}
+.image10 {
+  grid-area: image10;
+  margin: auto;
+}
+.image11 {
+  grid-area: image11;
+  margin: auto;
+}
+.image12 {
+  grid-area: image12;
+  margin: auto;
+}

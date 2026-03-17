@@ -1,0 +1,156 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+  height: 100px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  width: 50px;
+  flex-shrink: 1;
+  text-align: center;
+}
+.item:first-child {
+  flex-grow: 3;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+}
+.item:last-child {
+  display: flex;
+  gap: 10px;
+  flex-grow: 2;
+  flex-basis: 200px;
+}
+input {
+  flex: 2;
+  background-color: rgb(244, 244, 244);
+  padding: 5px;
+  width: 150px;
+  border: none;
+}
+.btn {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  background-color: rgb(44, 44, 255);
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+.container2 {
+  background-color: aliceblue;
+  margin: 0px;
+  padding: 10px;
+  height: 1000px;
+}
+.container2 h1 {
+  padding: 10px;
+  padding-left: 50px;
+}
+.container2 p {
+  padding-left: 50px;
+}
+.container3 {
+  display: flex;
+  padding: 10px;
+}
+.map {
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px;
+  width: 730px;
+  height: 740px;
+}
+.branches {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+.branches p {
+  padding: 5px;
+  margin: 5px;
+}
+.container4 {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.location-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+.minicontainer {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.minicontainer p {
+  padding: 5px;
+}
+.minicontainer span {
+  padding: 5px;
+  font-size: 15px;
+  color: grey;
+}
+.cheveron {
+  width: 30px;
+}
+
+.footer {
+  background-color: #001b44;
+  color: white;
+  display: flex;
+  padding: 10px;
+  height: 200px;
+  gap: 20px;
+}
+.footerItem {
+  padding: 10px;
+  flex: 1;
+}
+.footerItem h3 {
+  padding-bottom: 20px;
+}
+.footerItem p {
+  padding-bottom: 10px;
+}
+.social-items hr {
+  margin-top: 30px;
+  color: gray;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.social-items span {
+  color: gray;
+}
+.social {
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/extend";
+@use "../abstracts/variables" as *;
+.btn-primary {
+  @extend %btn-base;
+  @include border-mixin(1px, solid, $primaryColor);
+  background-color: $primaryColor;
+  color: white;
+}
+
+.btn-secondary {
+  @extend %btn-base;
+  @include border-mixin(1px, solid, $secondaryColor);
+  background-color: $secondaryColor;
+  color: white;
+}
+
+.btn-danger {
+  @extend %btn-base;
+  @include border-mixin(1px, solid, $dangerColor);
+  background-color: $dangerColor;
+  color: white;
+}

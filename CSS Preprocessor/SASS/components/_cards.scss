@@ -1,0 +1,28 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/extend";
+.card {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  @include shadow(1px, 1px, 5px, #6f9ff2);
+  @include border-mixin-color($primaryColor);
+  &:hover {
+    @include shadow(2px, 2px, 5px, #3e6fd8);
+  }
+  .btn {
+    @extend %btn-base;
+    color: white;
+    background-color: $secondaryColor;
+    margin: auto;
+    @include border-mixin(1px, solid, $primaryColor);
+  }
+  .image {
+    @include border-mixin(1px, solid, $primaryColor);
+    @include set-width-height(200px, 200px);
+    margin: 5px;
+    border-radius: 15px;
+  }
+}

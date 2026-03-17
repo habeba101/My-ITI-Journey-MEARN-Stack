@@ -1,0 +1,6 @@
+@use "../abstracts/extend";
+
+.circle-image {
+  @extend %circle-image;
+  margin: 20px;
+}

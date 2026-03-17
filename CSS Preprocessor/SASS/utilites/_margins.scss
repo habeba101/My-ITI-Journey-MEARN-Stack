@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+@for $i from 1 to 5 {
+  .m-#{$i} {
+    margin: $spacing * $i;
+  }
+}
+
+@for $i from 1 to 5 {
+  .mt-#{$i} {
+    margin-top: $spacing * $i;
+  }
+}
+@for $i from 1 to 5 {
+  .mb-#{$i} {
+    margin-bottom: $spacing * $i;
+  }
+}
+
+@for $i from 1 to 5 {
+  .ms-#{$i} {
+    margin-left: $spacing * $i;
+  }
+}
+
+@for $i from 1 to 5 {
+  .me-#{$i} {
+    margin-right: $spacing * $i;
+  }
+}
